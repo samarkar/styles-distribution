@@ -3,8 +3,8 @@
   <info>
     <title>Archaeonautica</title>
     <title-short>Archaeonautica</title-short>
-    <id>http://www.zotero.org/styles/archaeonautica</id>
-    <link href="http://www.zotero.org/styles/archaeonautica" rel="self"/>
+    <id>http://www.zotero.org/archaeonautica</id>
+    <link href="http://www.zotero.org" rel="self"/>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="https://journals.openedition.org/archaeonautica/279" rel="documentation"/>
     <author>
@@ -17,10 +17,9 @@
     <issn>0154-1854</issn>
     <eissn>2117-6973</eissn>
     <summary>Style conçu pour la revue Archaeonautica. L’archéologie maritime et navale de la
-            préhistoire à l’époque contemporaine. Centre Camille Jullian, CNRS</summary>
+      préhistoire à l’époque contemporaine. Centre Camille Jullian, CNRS</summary>
     <updated>2020-05-10T04:06:42+00:00</updated>
-    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under
-            a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
     <terms>
@@ -61,7 +60,7 @@
           <name form="short">
             <name-part name="family" font-variant="small-caps"/>
           </name>
-          <et-al font-style="italic" suffix=" "/>
+          <et-al font-style="italic"/>
           <substitute>
             <names variable="editor"/>
             <names variable="translator"/>
@@ -82,7 +81,7 @@
             <name-part name="family" font-variant="small-caps"/>
           </name>
           <label form="short" prefix=", " suffix=". " text-case="uppercase" strip-periods="true"/>
-          <et-al font-style="italic" suffix=" "/>
+          <et-al font-style="italic"/>
         </names>
       </if>
       <else-if variable="editor">
@@ -90,7 +89,7 @@
           <name form="long" name-as-sort-order="all" initialize-with=". " sort-separator=" ">
             <name-part name="family" font-variant="small-caps"/>
           </name>
-          <et-al font-style="italic" suffix=" "/>
+          <et-al font-style="italic"/>
         </names>
       </else-if>
       <else-if variable="collection-editor">
@@ -98,7 +97,7 @@
           <name form="long" name-as-sort-order="all" initialize-with=". " sort-separator=" ">
             <name-part name="family" font-variant="small-caps"/>
           </name>
-          <et-al font-style="italic" suffix=" "/>
+          <et-al font-style="italic"/>
         </names>
       </else-if>
       <else-if type="book map graphic report entry-dictionary entry-encyclopedia chapter speech paper-conference article-journal article-magazine article-newspaper">
@@ -347,9 +346,8 @@
     </choose>
   </macro>
   <macro name="year-date">
-    <!-- Une tabulation après la date -->
     <group suffix="&#9;">
-      <!-- Fin de la tabulation -->
+      <!-- Une tabulation après la date -->
       <choose>
         <if variable="issued">
           <date variable="issued">
@@ -473,7 +471,7 @@
       </group>
     </group>
   </macro>
-  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" collapse="year" year-suffix-delimiter=", " after-collapse-delimiter="&amp;#160;; " name-delimiter=", " initialize-with=". " delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" collapse="year" year-suffix-delimiter=", " after-collapse-delimiter="&#160;; " name-delimiter=", " initialize-with=". " delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
     <sort>
       <key variable="issued" sort="descending"/>
       <key macro="author-citation"/>
